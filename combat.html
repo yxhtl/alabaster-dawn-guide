@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>战斗系统详解 | Alabaster Dawn 攻略</title>
+<meta name="description" content="Alabaster Dawn战斗攻略：4元素(火/水/土/风)×8武器系统详解，Combat Arts战斗技、Divine Arts神技、连招策略与战斗中切换技巧。灵感来自鬼泣与王国之心。">
+<meta name="keywords" content="Alabaster Dawn战斗,4元素,8武器,火元素,水元素,土元素,风元素,战斗技,神技,连招,Combat Arts,Divine Arts">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Alabaster Dawn 战斗系统详解","inLanguage":"zh-CN","about":"Alabaster Dawn 4元素8武器战斗系统、战斗技与神技详解","isPartOf":{"@type":"WebSite","name":"Alabaster Dawn 攻略站"}}
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="brand"><span class="logo">AD</span><span data-i18n="brand">Alabaster Dawn 攻略站</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="getting-started.html" data-i18n="nav.getting-started">新手入门</a>
+      <a href="combat.html" class="active" data-i18n="nav.combat">战斗系统</a>
+      <a href="world.html" data-i18n="nav.world">世界探索</a>
+      <a href="settlements.html" data-i18n="nav.settlements">重建定居点</a>
+      <a href="progression.html" data-i18n="nav.progression">成长系统</a>
+      <a href="bosses.html" data-i18n="nav.bosses">Boss攻略</a>
+      <a href="items.html" data-i18n="nav.items">物品图鉴</a>
+    </nav>
+    <div class="nav-utils">
+      <button class="nav-btn search-btn" aria-label="搜索"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+      <button class="nav-btn dark-btn" aria-label="暗色模式"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+      <button class="nav-btn lang-btn" aria-label="语言">English</button>
+      <a href="index.html" class="nav-cta" data-i18n="nav.cta.home">返回首页</a>
+    </div>
+    <button class="burger" id="burger" aria-label="菜单"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section id="top" style="padding-top:54px">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html" data-en="Home">首页</a> <span>›</span> <span data-en="Combat">战斗系统</span></div>
+    <span class="eyebrow" data-en="Combat System">战斗系统</span>
+    <h2 class="title" data-en="4 Elements × 8 Weapons Combat System">4元素8武器战斗系统 <span class="ver-tag" data-en="Verified 2026.07">数据核对 2026.07</span></h2>
+    <p class="subtitle" data-en="Inspired by Devil May Cry, Kingdom Hearts &amp; CrossCode. Master element switching, weapon combos, Combat Arts and Divine Arts. Source: Steam Store Page &amp; in-game observation">灵感来自鬼泣、王国之心和CrossCode。掌握元素切换、武器连招、战斗技和神技。数据来源：Steam商店页面 &amp; 游戏内实测</p>
+
+    <!-- ===== 4 ELEMENTS ===== -->
+    <h4 style="color:var(--heading);margin-bottom:14px;font-size:20px" data-en="4 Elements">四大元素</h4>
+    <div class="elem-grid">
+      <div class="elem-card e-fire">
+        <div class="elem-icon">F</div>
+        <h4 data-en="Fire">火元素</h4>
+        <p data-en="Burn damage over time, burst damage. Best against groups and enemies weak to fire. Ranged-oriented with explosive options.">持续燃烧伤害，爆发输出。适合打群怪和弱火敌人。偏远程，有爆炸选项。</p>
+        <div class="weapon-list" data-en="<b>Weapons:</b> 2 slotable (e.g. ranged staff + explosive hammer)"><b>武器：</b>可装2把（如远程法杖+爆发锤）</div>
+      </div>
+      <div class="elem-card e-water">
+        <div class="elem-icon">W</div>
+        <h4 data-en="Water">水元素</h4>
+        <p data-en="Freeze and slow effects, crowd control. Great for locking down fast enemies and setting up combos. Area-of-effect oriented.">冰冻减速，群体控制。适合锁定快速敌人和铺垫连招。偏范围攻击。</p>
+        <div class="weapon-list" data-en="<b>Weapons:</b> 2 slotable (e.g. wave blade + frost spear)"><b>武器：</b>可装2把（如波动刃+冰霜矛）</div>
+      </div>
+      <div class="elem-card e-earth">
+        <div class="elem-icon">E</div>
+        <h4 data-en="Earth">土元素</h4>
+        <p data-en="Defense, shielding, heavy strikes. Best for tanky enemies and blocking powerful attacks. High single-target damage.">防御、护盾、重击。适合打厚血敌人和格挡强力攻击。高单体伤害。</p>
+        <div class="weapon-list" data-en="<b>Weapons:</b> 2 slotable (e.g. greatsword + tower shield)"><b>武器：</b>可装2把（如巨剑+塔盾）</div>
+      </div>
+      <div class="elem-card e-wind">
+        <div class="elem-icon">A</div>
+        <h4 data-en="Wind">风元素</h4>
+        <p data-en="Mobility, speed, rapid combos. Best for hit-and-run tactics and dodging. Fast attack speed, lower per-hit damage.">位移、速度、快速连击。适合游击战术和闪避。攻速快但单发伤害低。</p>
+        <div class="weapon-list" data-en="<b>Weapons:</b> 2 slotable (e.g. dual daggers + wind bow)"><b>武器：</b>可装2把（如双刀+风弓）</div>
+      </div>
+    </div>
+
+    <!-- ===== COMBAT MECHANICS ===== -->
+    <div class="feature-grid" style="margin-top:40px">
+      <div class="fcard"><h4 data-en="Element Switching">元素切换</h4><p data-en="Switch between 4 elements at any time — even mid-combat. This is the core mechanic.">随时切换4种元素——战斗中也能切。这是核心机制。</p><ul>
+        <li data-en="Switch elements to exploit enemy weaknesses">切元素利用敌人弱点</li>
+        <li data-en="Chain element switches for combo bonuses">连切元素获得连招加成</li>
+        <li data-en="Each element has 2 slotted weapons">每个元素装2把武器</li>
+        <li data-en="Experiment with different element-weapon combos">多试不同元素-武器组合</li>
+      </ul></div>
+      <div class="fcard"><h4 data-en="Combat Arts">战斗技</h4><p data-en="Each weapon has its own skilltree. Unlock Combat Arts to gain new attacks and combo finishers.">每把武器有独立技能树。解锁战斗技获得新攻击和连招终结技。</p><ul>
+        <li data-en="One skilltree per weapon (8 total)">每把武器一棵树（共8棵）</li>
+        <li data-en="Unlock new attacks and modifiers">解锁新攻击和修饰</li>
+        <li data-en="Combat Arts cost resources to use">战斗技消耗资源使用</li>
+        <li data-en="Mix Arts from different weapons">混搭不同武器的战技</li>
+      </ul></div>
+      <div class="fcard"><h4 data-en="Divine Arts">神技</h4><p data-en="Powerful spells tied to each element. Save for tough enemies and boss phases.">每个元素的大招。留着打强敌和Boss阶段用。</p><ul>
+        <li data-en="One Divine Art per element">每元素一个神技</li>
+        <li data-en="High damage, long cooldown">高伤害，长冷却</li>
+        <li data-en="Use during boss vulnerable phases">Boss虚弱阶段使用</li>
+        <li data-en="Can clear groups of enemies">可清群怪</li>
+      </ul></div>
+      <div class="fcard"><h4 data-en="Combo System">连招系统</h4><p data-en="Chain attacks across elements and weapons for stylish combos, inspired by DMC's style system.">跨元素和武器连招打出华丽连击，灵感来自鬼泣的风格系统。</p><ul>
+        <li data-en="Switch elements mid-combo for bonuses">连招中途切元素获加成</li>
+        <li data-en="Weapon swaps extend combo chains">换武器延长连招链</li>
+        <li data-en="Higher combo = more damage scaling">连招越高伤害加成越多</li>
+        <li data-en="Practice in Hall of Trials">在试炼厅练习连招</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COMBAT TIPS ===== -->
+<section class="bg-alt">
+  <div class="wrap">
+    <span class="eyebrow" data-en="Combat Tips">战斗技巧</span>
+    <h2 class="title" data-en="Advanced Combat Strategies">进阶战斗策略</h2>
+    <p class="subtitle" data-en="From basic survival to stylish combo mastery — tips for every skill level.">从基础生存到华丽连招——各级别技巧都在这。</p>
+    <div class="feature-grid">
+      <div class="fcard"><h4 data-en="Early Game Survival">前期生存</h4><ul>
+        <li data-en="Don't rush — learn enemy attack patterns">别急——先学敌人攻击模式</li>
+        <li data-en="Use Earth element for defense when low HP">低血时切土元素防御</li>
+        <li data-en="Wind element for dodging fast enemies">风元素闪避快速敌人</li>
+        <li data-en="Cook before every tough fight">每场硬仗前先烹饪</li>
+      </ul></div>
+      <div class="fcard"><h4 data-en="Mid Game Optimization">中期优化</h4><ul>
+        <li data-en="Slot gems for element-specific bonuses">镶嵌元素专属宝石</li>
+        <li data-en="Unlock Combat Arts on your main weapons">主力武器解锁战斗技</li>
+        <li data-en="Practice element-switching combos">练习元素切换连招</li>
+        <li data-en="Use Divine Arts on elite enemies">精英怪用神技</li>
+      </ul></div>
+      <div class="fcard"><h4 data-en="Late Game Mastery">后期精通</h4><ul>
+        <li data-en="Full weapon skilltrees unlocked">全武器技能树解锁</li>
+        <li data-en="Chain Divine Arts across elements">跨元素连神技</li>
+        <li data-en="Optimize gem builds per element">按元素优化宝石配置</li>
+        <li data-en="Master the Hall of Trials challenges">精通试炼厅挑战</li>
+      </ul></div>
+      <div class="fcard"><h4 data-en="Enemy Type Counters">敌人类型克制</h4><ul>
+        <li data-en="Fire-weak enemies: use Fire element">弱火敌人：用火元素</li>
+        <li data-en="Fast enemies: Water to slow them">快速敌人：水元素减速</li>
+        <li data-en="Tanky enemies: Earth for heavy damage">厚血敌人：土元素重击</li>
+        <li data-en="Groups: Wind for AOE + mobility">群怪：风元素范围+位移</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="brand" style="color:#fff"><span class="logo">AD</span><span data-en="Alabaster Dawn Guide">Alabaster Dawn 攻略站</span></a>
+        <p data-i18n="foot.branddesc">《Alabaster Dawn》中文玩家攻略站，原创整理，持续更新。</p>
+        <p class="disclaimer" data-en="This is a non-profit fan guide site. Game rights belong to Radical Fish Games.">本站为玩家非营利性攻略站，游戏版权归 Radical Fish Games 所有。</p>
+      </div>
+      <div><h4 data-i18n="foot.nav">攻略导航</h4><a href="getting-started.html" data-en="Beginner">新手入门</a><a href="combat.html" data-en="Combat">战斗系统</a><a href="world.html" data-en="World">世界探索</a></div>
+      <div><h4 data-i18n="foot.systems">系统与图鉴</h4><a href="settlements.html" data-en="Settlements">重建定居点</a><a href="progression.html" data-en="Progression">成长系统</a><a href="bosses.html" data-en="Bosses">Boss攻略</a><a href="items.html" data-en="Items">物品图鉴</a></div>
+      <div><h4 data-i18n="foot.about">关于</h4><a href="#" data-i18n="foot.aboutus">关于本站</a><a href="#" data-i18n="foot.feedback">投稿反馈</a><a href="#" data-i18n="foot.changelog">更新日志</a></div>
+    </div>
+    <div class="foot-bottom" data-i18n="foot.copy">© 2026 Alabaster Dawn 攻略站 · 中文攻略 · 仅供学习交流</div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="返回顶部" data-en="Top">顶部</button>
+<div class="search-overlay" id="searchOverlay">
+  <div class="search-panel">
+    <div class="search-input-wrap">
+      <span class="s-ico"></span>
+      <input type="text" placeholder="搜索攻略、武器、Boss…">
+      <button class="search-close" aria-label="关闭">×</button>
+    </div>
+    <div class="search-results"></div>
+  </div>
+</div>
+<script src="js/common.js"></script>
+</body>
+</html>

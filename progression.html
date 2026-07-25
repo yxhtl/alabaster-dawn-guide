@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>成长系统：宝石、技能树与烹饪 | Alabaster Dawn 攻略</title>
+<meta name="description" content="Alabaster Dawn成长系统攻略：宝石镶嵌与附魔、8武器技能树(Combat Arts)、烹饪系统与味觉等级(Palate Level)、精炼师Artificer使用指南。">
+<meta name="keywords" content="Alabaster Dawn成长,宝石,技能树,烹饪,味觉等级,Palate Level,附魔,精炼师,Artificer,Combat Arts">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Alabaster Dawn 成长系统","inLanguage":"zh-CN","about":"Alabaster Dawn 宝石镶嵌、武器技能树、烹饪与味觉等级系统","isPartOf":{"@type":"WebSite","name":"Alabaster Dawn 攻略站"}}
+</script>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="brand"><span class="logo">AD</span><span data-i18n="brand">Alabaster Dawn 攻略站</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="getting-started.html" data-i18n="nav.getting-started">新手入门</a>
+      <a href="combat.html" data-i18n="nav.combat">战斗系统</a>
+      <a href="world.html" data-i18n="nav.world">世界探索</a>
+      <a href="settlements.html" data-i18n="nav.settlements">重建定居点</a>
+      <a href="progression.html" class="active" data-i18n="nav.progression">成长系统</a>
+      <a href="bosses.html" data-i18n="nav.bosses">Boss攻略</a>
+      <a href="items.html" data-i18n="nav.items">物品图鉴</a>
+    </nav>
+    <div class="nav-utils">
+      <button class="nav-btn search-btn" aria-label="搜索"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+      <button class="nav-btn dark-btn" aria-label="暗色模式"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+      <button class="nav-btn lang-btn" aria-label="语言">English</button>
+      <a href="index.html" class="nav-cta" data-i18n="nav.cta.home">返回首页</a>
+    </div>
+    <button class="burger" id="burger" aria-label="菜单"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section id="top" style="padding-top:54px">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html" data-en="Home">首页</a> <span>›</span> <span data-en="Progression">成长系统</span></div>
+    <span class="eyebrow" data-en="Progression">成长系统</span>
+    <h2 class="title" data-en="Gems, Skilltrees &amp; Cooking">宝石、技能树与烹饪系统 <span class="ver-tag" data-en="Verified 2026.07">数据核对 2026.07</span></h2>
+    <p class="subtitle" data-en="Three growth pillars: gem slotting for equipment, weapon skilltrees for Combat Arts, and cooking for buffs &amp; Palate Level. Source: Steam Store Page &amp; in-game observation">三大成长支柱：宝石镶嵌强化装备、武器技能树解锁战斗技、烹饪提供增益与味觉等级。数据来源：Steam商店页面 &amp; 游戏内实测</p>
+
+    <h4 style="color:var(--heading);margin-bottom:14px;font-size:20px" data-en="Gem System">宝石系统</h4>
+    <div class="elem-grid">
+      <div class="elem-card e-fire">
+        <div class="elem-icon">G</div>
+        <h4 data-en="Gem Slotting">宝石镶嵌</h4>
+        <p data-en="Slot gems into weapons and your core to activate enchantments. Each gem provides specific stat bonuses or elemental effects.">将宝石镶嵌到武器和核心可激活附魔。每颗宝石提供特定属性加成或元素效果。</p>
+      </div>
+      <div class="elem-card e-water">
+        <div class="elem-icon">E</div>
+        <h4 data-en="Enchantments">附魔效果</h4>
+        <p data-en="Gems activate enchantments — passive bonuses like extra damage, elemental resist, or healing effects. Mix and match for builds.">宝石激活附魔——额外伤害、元素抗性或治疗效果等被动加成。自由搭配形成Build。</p>
+      </div>
+      <div class="elem-card e-earth">
+        <div class="elem-icon">A</div>
+        <h4 data-en="Artificer Crafting">精炼师制作</h4>
+        <p data-en="Artificers in settlements craft and upgrade gems from world materials. Higher settlement science = better gem options.">定居点精炼师用世界材料制作和升级宝石。定居点科技越高 = 宝石选项越好。</p>
+      </div>
+      <div class="elem-card e-wind">
+        <div class="elem-icon">U</div>
+        <h4 data-en="Gem Upgrades">宝石升级</h4>
+        <p data-en="Upgrade gems at Artificers using rare materials. Higher-tier gems provide stronger enchantments and new effects.">在精炼师处用稀有材料升级宝石。高阶宝石提供更强附魔和新效果。</p>
+      </div>
+    </div>
+
+    <div class="feature-grid" style="margin-top:40px">
+      <div class="fcard"><h4 data-en="Gem Types">宝石类型</h4><ul>
+        <li data-en="<b>Fire gems:</b> Burn damage, attack power up"><b>火宝石：</b>燃烧伤害、攻击力提升</li>
+        <li data-en="<b>Water gems:</b> Freeze chance, defense up"><b>水宝石：</b>冰冻几率、防御提升</li>
+        <li data-en="<b>Earth gems:</b> Shield strength, HP up"><b>土宝石：</b>护盾强度、生命提升</li>
+        <li data-en="<b>Wind gems:</b> Attack speed, dodge up"><b>风宝石：</b>攻速、闪避提升</li>
+        <li data-en="<b>Hybrid gems:</b> Cross-element effects (rare)"><b>混合宝石：</b>跨元素效果（稀有）</li>
+      </ul></div>
+      <div class="fcard"><h4 data-en="Gem Strategy">宝石策略</h4><ul>
+        <li data-en="Match gems to weapon element for synergy">宝石与武器元素匹配产生协同</li>
+        <li data-en="Don't neglect defense gems on tanky weapons">厚血武器别忘防御宝石</li>
+        <li data-en="Upgrade core gems first — they affect all elements">优先升级核心宝石——影响所有元素</li>
+        <li data-en="Save rare materials for high-tier upgrades">稀有材料留给高阶升级</li>
+        <li data-en="Experiment with hybrid builds in Hall of Trials">在试炼厅实验混合Build</li>
+      </ul></div>
+      <div class="fcard"><h4 data-en="Artificer Locations">精炼师位置</h4><ul>
+        <li data-en="<b>Lyhamn:</b> First Artificer, basic gems"><b>莱哈姆：</b>首个精炼师，基础宝石</li>
+        <li data-en="<b>Blooming Villan:</b> Food-related gem options"><b>繁花维兰：</b>食物相关宝石</li>
+        <li data-en="<b>Nuemera Station:</b> Advanced gem crafting"><b>纽梅拉驿站：</b>高级宝石制作</li>
+        <li data-en="<b>Sundalan Outpost:</b> Top-tier gems, endgame"><b>桑达兰前哨：</b>顶级宝石，终局</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-alt">
+  <div class="wrap">
+    <span class="eyebrow" data-en="Weapon Skilltrees">武器技能树</span>
+    <h2 class="title" data-en="8 Weapon Skilltrees &amp; Combat Arts">8把武器技能树与战斗技</h2>
+    <p class="subtitle" data-en="Each weapon has its own skilltree. Unlock Combat Arts for new attacks, modifiers, and combo finishers. 8 weapons = 8 skilltrees to invest in.">每把武器有独立技能树。解锁战斗技获得新攻击、修饰和连招终结技。8把武器 = 8棵技能树可以投资。</p>
+    <div class="feature-grid">
+      <div class="fcard"><h4 data-en="How Skilltrees Work">技能树机制</h4><ul>
+        <li data-en="One skilltree per weapon (8 total)">每把武器一棵树（共8棵）</li>
+        <li data-en="Spend skill points to unlock nodes">花技能点解锁节点</li>
+        <li data-en="Nodes include new attacks, modifiers, passives">节点含新攻击、修饰、被动</li>
+        <li data-en="Some nodes require prerequisite unlocks">部分节点需要前置解锁</li>
+        <li data-en="Respec available — experiment freely">可洗点——大胆实验</li>
+      </ul></div>
+      <div class="fcard"><h4 data-en="Combat Arts">战斗技</h4><ul>
+        <li data-en="Special attacks unlocked from skilltrees">从技能树解锁的特殊攻击</li>
+        <li data-en="Each weapon has multiple Combat Arts">每把武器有多个战斗技</li>
+        <li data-en="Costs resources to use in combat">战斗中消耗资源使用</li>
+        <li data-en="Mix Arts from different weapons in combos">连招中混搭不同武器的战技</li>
+        <li data-en="Key for stylish, high-damage playstyle">华丽高伤打法的核心</li>
+      </ul></div>
+      <div class="fcard"><h4 data-en="Divine Arts">神技</h4><ul>
+        <li data-en="One powerful Divine Art per element">每元素一个强力神技</li>
+        <li data-en="High damage, long cooldown">高伤害，长冷却</li>
+        <li data-en="Unlocked through story progression">随剧情推进解锁</li>
+        <li data-en="Best used on boss vulnerable phases">Boss虚弱阶段使用最佳</li>
+        <li data-en="Can be extended with gem support">宝石可强化神技效果</li>
+      </ul></div>
+      <div class="fcard"><h4 data-en="Skill Point Sources">技能点来源</h4><ul>
+        <li data-en="Leveling up through combat and quests">通过战斗和任务升级</li>
+        <li data-en="Completing Hall of Trials challenges">完成试炼厅挑战</li>
+        <li data-en="Boss defeats grant bonus points">击败Boss获得额外点数</li>
+        <li data-en="Side quest rewards">支线任务奖励</li>
+        <li data-en="Settlement science milestones">定居点科技里程碑</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="eyebrow" data-en="Cooking &amp; Palate Level">烹饪与味觉等级</span>
+    <h2 class="title" data-en="Cooking System &amp; Palate Level">烹饪系统与味觉等级</h2>
+    <p class="subtitle" data-en="Cooking heals, buffs, and raises Palate Level. Higher Palate Level = stronger meal effects. Cook variety, not just quantity.">烹饪能回血、加增益、提升味觉等级。味觉等级越高 = 用餐效果越强。要多做不同料理，不是做得多就行。</p>
+    <div class="feature-grid">
+      <div class="fcard"><h4 data-en="Cooking Basics">烹饪基础</h4><ul>
+        <li data-en="Cook at <b>resting spots</b> found throughout the world">在世界各地的<b>休息点</b>烹饪</li>
+        <li data-en="Cooking restores <b>healing bulbs</b> (your healing charges)">烹饪恢复<b>治疗球</b>（治疗次数）</li>
+        <li data-en="Meals provide <b>temporary buffs</b> — attack up, defense up, etc.">料理提供<b>临时增益</b>——攻击提升、防御提升等</li>
+        <li data-en="Ingredients gathered from <b>world exploration</b> and <b>trade routes</b>">食材来自<b>世界探索</b>和<b>贸易路线</b></li>
+        <li data-en="Some recipes unlocked via <b>settlement science</b>">部分配方通过<b>定居点科技</b>解锁</li>
+      </ul></div>
+      <div class="fcard"><h4 data-en="Palate Level">味觉等级</h4><ul>
+        <li data-en="Cook <b>different dishes</b> to raise Palate Level">烹饪<b>不同料理</b>提升味觉等级</li>
+        <li data-en="Repeated same dish = <b>diminishing returns</b>">重复做同一道菜 = <b>收益递减</b></li>
+        <li data-en="Higher Palate Level = <b>stronger meal effects</b>">味觉等级越高 = <b>用餐效果越强</b></li>
+        <li data-en="Palate Level is <b>permanent</b> — invest early">味觉等级是<b>永久的</b>——早点投资</li>
+        <li data-en="Aim for variety: try every recipe at least once">目标：每种配方至少做一次</li>
+      </ul></div>
+      <div class="fcard"><h4 data-en="Buff Types">增益类型</h4><ul>
+        <li data-en="<b>Attack buffs:</b> Increased damage output"><b>攻击增益：</b>提升伤害输出</li>
+        <li data-en="<b>Defense buffs:</b> Reduced incoming damage"><b>防御增益：</b>减少受到伤害</li>
+        <li data-en="<b>Speed buffs:</b> Faster movement &amp; attack speed"><b>速度增益：</b>更快移动和攻速</li>
+        <li data-en="<b>Healing buffs:</b> More healing per bulb"><b>治疗增益：</b>每颗治疗球回更多血</li>
+        <li data-en="<b>Elemental buffs:</b> Bonus to specific element"><b>元素增益：</b>特定元素加成</li>
+      </ul></div>
+      <div class="fcard"><h4 data-en="Cooking Strategy">烹饪策略</h4><ul>
+        <li data-en="Always cook before boss fights">打Boss前一定要烹饪</li>
+        <li data-en="Match buff to enemy weakness">增益匹配敌人弱点</li>
+        <li data-en="Stock up on ingredients via trade routes">通过贸易路线囤食材</li>
+        <li data-en="Unlock new recipes from settlement science">从定居点科技解锁新配方</li>
+        <li data-en="Experiment with dishes in Hall of Trials">在试炼厅实验料理效果</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-alt">
+  <div class="wrap">
+    <span class="eyebrow" data-en="Growth Roadmap">成长路线图</span>
+    <h2 class="title" data-en="When to Upgrade What">什么时候升级什么</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot">01</div>
+        <div class="tl-body">
+          <h4 data-en="Early Game · Focus on Basics">前期 · 夯实基础</h4>
+          <ul>
+            <li data-en="Cook variety dishes to start Palate Level growth">多做不同料理开始味觉等级成长</li>
+            <li data-en="Slot basic gems as soon as Artificer unlocks">精炼师一解锁就镶嵌基础宝石</li>
+            <li data-en="Invest skill points in 2 main weapons first">技能点先投2把主力武器</li>
+            <li data-en="Don't hoard — use gems and buffs now">别囤——现在就用宝石和增益</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">02</div>
+        <div class="tl-body">
+          <h4 data-en="Mid Game · Diversify &amp; Upgrade">中期 · 多元化与升级</h4>
+          <ul>
+            <li data-en="Start investing in all 8 weapon skilltrees">开始投资全部8把武器技能树</li>
+            <li data-en="Upgrade gems at Artificer with rare materials">用稀有材料在精炼师处升级宝石</li>
+            <li data-en="Push Palate Level by cooking every recipe">做遍所有配方提升味觉等级</li>
+            <li data-en="Experiment with hybrid gem builds">实验混合宝石Build</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">03</div>
+        <div class="tl-body">
+          <h4 data-en="Late Game · Optimize Everything">后期 · 全面优化</h4>
+          <ul>
+            <li data-en="Max all weapon skilltrees">全武器技能树拉满</li>
+            <li data-en="Craft top-tier gems at Sundalan Outpost">在桑达兰前哨制作顶级宝石</li>
+            <li data-en="Max Palate Level for strongest buffs">味觉等级拉满获得最强增益</li>
+            <li data-en="Optimize builds per element for endgame content">按元素优化Build应对终局内容</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="brand" style="color:#fff"><span class="logo">AD</span><span data-en="Alabaster Dawn Guide">Alabaster Dawn 攻略站</span></a>
+        <p data-i18n="foot.branddesc">《Alabaster Dawn》中文玩家攻略站，原创整理，持续更新。</p>
+        <p class="disclaimer" data-en="This is a non-profit fan guide site. Game rights belong to Radical Fish Games.">本站为玩家非营利性攻略站，游戏版权归 Radical Fish Games 所有。</p>
+      </div>
+      <div><h4 data-i18n="foot.nav">攻略导航</h4><a href="getting-started.html" data-en="Beginner">新手入门</a><a href="combat.html" data-en="Combat">战斗系统</a><a href="world.html" data-en="World">世界探索</a></div>
+      <div><h4 data-i18n="foot.systems">系统与图鉴</h4><a href="settlements.html" data-en="Settlements">重建定居点</a><a href="progression.html" data-en="Progression">成长系统</a><a href="bosses.html" data-en="Bosses">Boss攻略</a><a href="items.html" data-en="Items">物品图鉴</a></div>
+      <div><h4 data-i18n="foot.about">关于</h4><a href="#" data-i18n="foot.aboutus">关于本站</a><a href="#" data-i18n="foot.feedback">投稿反馈</a><a href="#" data-i18n="foot.changelog">更新日志</a></div>
+    </div>
+    <div class="foot-bottom" data-i18n="foot.copy">© 2026 Alabaster Dawn 攻略站 · 中文攻略 · 仅供学习交流</div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="返回顶部" data-en="Top">顶部</button>
+<div class="search-overlay" id="searchOverlay">
+  <div class="search-panel">
+    <div class="search-input-wrap">
+      <span class="s-ico"></span>
+      <input type="text" placeholder="搜索攻略、武器、Boss…">
+      <button class="search-close" aria-label="关闭">×</button>
+    </div>
+    <div class="search-results"></div>
+  </div>
+</div>
+<script src="js/common.js"></script>
+</body>
+</html>

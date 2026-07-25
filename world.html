@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>世界探索指南 | Alabaster Dawn 攻略</title>
+<meta name="description" content="Alabaster Dawn世界探索攻略：提兰索(Tiran Sol)七大区域探索指南、谜题类型与解法、宝箱寻宝、跑酷隐藏路径、快速旅行与地图标记系统。">
+<meta name="keywords" content="Alabaster Dawn探索,提兰索,Tiran Sol,区域,谜题,宝箱,跑酷,快速旅行,地图标记">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Alabaster Dawn 世界探索指南","inLanguage":"zh-CN","about":"Alabaster Dawn 提兰索七大区域探索、谜题、宝箱与地图系统","isPartOf":{"@type":"WebSite","name":"Alabaster Dawn 攻略站"}}
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="brand"><span class="logo">AD</span><span data-i18n="brand">Alabaster Dawn 攻略站</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="getting-started.html" data-i18n="nav.getting-started">新手入门</a>
+      <a href="combat.html" data-i18n="nav.combat">战斗系统</a>
+      <a href="world.html" class="active" data-i18n="nav.world">世界探索</a>
+      <a href="settlements.html" data-i18n="nav.settlements">重建定居点</a>
+      <a href="progression.html" data-i18n="nav.progression">成长系统</a>
+      <a href="bosses.html" data-i18n="nav.bosses">Boss攻略</a>
+      <a href="items.html" data-i18n="nav.items">物品图鉴</a>
+    </nav>
+    <div class="nav-utils">
+      <button class="nav-btn search-btn" aria-label="搜索"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+      <button class="nav-btn dark-btn" aria-label="暗色模式"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+      <button class="nav-btn lang-btn" aria-label="语言">English</button>
+      <a href="index.html" class="nav-cta" data-i18n="nav.cta.home">返回首页</a>
+    </div>
+    <button class="burger" id="burger" aria-label="菜单"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section id="top" style="padding-top:54px">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html" data-en="Home">首页</a> <span>›</span> <span data-en="World">世界探索</span></div>
+    <span class="eyebrow" data-en="World Exploration">世界探索</span>
+    <h2 class="title" data-en="Tiran Sol 7 Areas Exploration Guide">提兰索七大区域探索指南 <span class="ver-tag" data-en="Verified 2026.07">数据核对 2026.07</span></h2>
+    <p class="subtitle" data-en="Tiran Sol is a vast world that changes as nature returns. 7 unique areas, each with resources, enemies, puzzles and treasures. Explore in story order. Source: Steam Store Page &amp; in-game observation">提兰索是一个随自然回归而变化的广阔世界。7大独特区域，各有资源、敌人、谜题和宝箱。按剧情顺序探索。数据来源：Steam商店页面 &amp; 游戏内实测</p>
+
+    <!-- ===== PROGRESS MAP ===== -->
+    <div class="biome-progression">
+      <div class="bp-node a-meadow active">
+        <div class="bp-step">01</div>
+        <div class="bp-name" data-en="Lost Lands">失落之地</div>
+        <div class="bp-info" data-en="Start · Tutorial">起步 · 教学区</div>
+      </div>
+      <div class="bp-arrow">›</div>
+      <div class="bp-node a-settlement">
+        <div class="bp-step">02</div>
+        <div class="bp-name" data-en="Lyhamn">莱哈姆</div>
+        <div class="bp-info" data-en="1st Settlement · Rebuild">首个定居点 · 重建</div>
+      </div>
+      <div class="bp-arrow">›</div>
+      <div class="bp-node a-forest">
+        <div class="bp-step">03</div>
+        <div class="bp-name" data-en="Quickwood">速木林</div>
+        <div class="bp-info" data-en="Forest · Resources">森林 · 资源区</div>
+      </div>
+      <div class="bp-arrow">›</div>
+      <div class="bp-node a-trial">
+        <div class="bp-step">04</div>
+        <div class="bp-name" data-en="Hall of Trials">试炼厅</div>
+        <div class="bp-info" data-en="Combat · Boss 1">战斗 · Boss 1</div>
+      </div>
+      <div class="bp-arrow">›</div>
+      <div class="bp-node a-mountain">
+        <div class="bp-step">05</div>
+        <div class="bp-name" data-en="North Region">北方区域</div>
+        <div class="bp-info" data-en="Cold · Boss 2">寒冷 · Boss 2</div>
+      </div>
+      <div class="bp-arrow">›</div>
+      <div class="bp-node a-coast">
+        <div class="bp-step">06</div>
+        <div class="bp-name" data-en="Nuemera">纽梅拉岛</div>
+        <div class="bp-info" data-en="Island · Quests">海岛 · 任务区</div>
+      </div>
+      <div class="bp-arrow">›</div>
+      <div class="bp-node a-ruins">
+        <div class="bp-step">07</div>
+        <div class="bp-name" data-en="Sundalan">桑达兰</div>
+        <div class="bp-info" data-en="Late Game · Story">后期 · 主线</div>
+      </div>
+    </div>
+
+    <div class="biome-cards">
+      <div class="map-card a-meadow">
+        <div class="map-head"><div class="num">01</div><h4 data-en="Lost Lands">失落之地</h4></div>
+        <p data-en="Starting area. Ruined wasteland where Juno awakens. Tutorial zone with basic combat, puzzles, and exploration lessons.">起始区域。Juno苏醒的废墟荒原。教学区，包含基础战斗、谜题和探索教学。</p>
+        <ul>
+          <li data-en="<b>Resources:</b> Basic materials, early ingredients"><b>资源：</b>基础材料、前期食材</li>
+          <li data-en="<b>Enemies:</b> Weak shadow creatures"><b>敌人：</b>弱小暗影生物</li>
+          <li data-en="<b>Puzzles:</b> Simple element-switching tutorials"><b>谜题：</b>简单元素切换教学</li>
+          <li data-en="<b>Tip:</b> Learn the basics thoroughly before moving on"><b>建议：</b>彻底学会基础再前进</li>
+        </ul>
+      </div>
+      <div class="map-card a-settlement">
+        <div class="map-head"><div class="num">02</div><h4 data-en="Lyhamn">莱哈姆</h4></div>
+        <p data-en="First settlement to rebuild. NPCs give quests, Artificers craft gems. Trade routes start here.">第一个需要重建的定居点。NPC给任务，精炼师做宝石。贸易路线从这里开始。</p>
+        <ul>
+          <li data-en="<b>Resources:</b> Settlement-specific materials"><b>资源：</b>定居点专属材料</li>
+          <li data-en="<b>Key:</b> Rebuild quests, trade route unlock"><b>关键：</b>重建任务、贸易路线解锁</li>
+          <li data-en="<b>NPCs:</b> Artificer, quest givers, merchants"><b>NPC：</b>精炼师、任务发布者、商人</li>
+          <li data-en="<b>Tip:</b> Complete all rebuild stages before moving on"><b>建议：</b>完成所有重建阶段再走</li>
+        </ul>
+      </div>
+      <div class="map-card a-forest">
+        <div class="map-head"><div class="num">03</div><h4 data-en="Quickwood Forest">速木林</h4></div>
+        <p data-en="Forest area with wood resources and ingredients. Contains the 'Quick Quickwood Query' quest. Parkour sections hide treasure.">森林区域，产木材资源和食材。包含"Quick Quickwood Query"任务。跑酷区藏宝箱。</p>
+        <ul>
+          <li data-en="<b>Resources:</b> Wood, herbs, cooking ingredients"><b>资源：</b>木材、草药、烹饪食材</li>
+          <li data-en="<b>Enemies:</b> Forest creatures, mid-tier"><b>敌人：</b>森林生物，中等级</li>
+          <li data-en="<b>Puzzles:</b> Element-locked doors, movable blocks"><b>谜题：</b>元素锁门、可推方块</li>
+          <li data-en="<b>Tip:</b> Check tree canopies for hidden paths"><b>建议：</b>查树冠找隐藏路径</li>
+        </ul>
+      </div>
+      <div class="map-card a-trial">
+        <div class="map-head"><div class="num">04</div><h4 data-en="Hall of Trials">试炼厅</h4></div>
+        <p data-en="Combat challenge dungeon with floors. Boss Custo Turri Magnus waits at the top. Test your combat skills here.">战斗挑战地牢，分楼层。Boss Custo Turri Magnus在顶层。在这里检验你的战斗技术。</p>
+        <ul>
+          <li data-en="<b>Structure:</b> Multi-floor combat challenges"><b>结构：</b>多层战斗挑战</li>
+          <li data-en="<b>Boss:</b> Custo Turri Magnus (Floor top)"><b>Boss：</b>Custo Turri Magnus（顶层）</li>
+          <li data-en="<b>Rewards:</b> Combat Arts, gems, upgrade materials"><b>奖励：</b>战斗技、宝石、升级材料</li>
+          <li data-en="<b>Tip:</b> Practice combos on lower floors first"><b>建议：</b>先在低层练连招</li>
+        </ul>
+      </div>
+      <div class="map-card a-mountain">
+        <div class="map-head"><div class="num">05</div><h4 data-en="North Region">北方区域</h4></div>
+        <p data-en="Cold northern area. Contains the second Hall of Trials and Boss Grandis Molis. Requires preparation for harsher enemies.">寒冷的北方区域。包含第二个试炼厅和Boss Grandis Molis。需要为更强的敌人做准备。</p>
+        <ul>
+          <li data-en="<b>Resources:</b> Rare materials, advanced ingredients"><b>资源：</b>稀有材料、高级食材</li>
+          <li data-en="<b>Enemies:</b> Strong shadow creatures, elites"><b>敌人：</b>强力暗影生物、精英怪</li>
+          <li data-en="<b>Boss:</b> Grandis Molis"><b>Boss：</b>Grandis Molis</li>
+          <li data-en="<b>Tip:</b> Bring cooked buffs and slotted gems"><b>建议：</b>带好烹饪增益和镶嵌宝石</li>
+        </ul>
+      </div>
+      <div class="map-card a-coast">
+        <div class="map-head"><div class="num">06</div><h4 data-en="Nuemera Island">纽梅拉岛</h4></div>
+        <p data-en="Island area with unique quests and resources. Contains the 'Dream Within a Dream' roguelike mode entrance.">海岛区域，有独特任务和资源。包含"Dream Within a Dream"肉鸽模式入口。</p>
+        <ul>
+          <li data-en="<b>Resources:</b> Island-specific materials"><b>资源：</b>海岛专属材料</li>
+          <li data-en="<b>Special:</b> Roguelike mode 'Dream Within a Dream'"><b>特殊：</b>肉鸽模式"梦中之梦"</li>
+          <li data-en="<b>Quests:</b> Multiple side quests and tasks"><b>任务：</b>多个支线任务</li>
+          <li data-en="<b>Tip:</b> Try roguelike for extra replayability"><b>建议：</b>试试肉鸽模式增加可玩性</li>
+        </ul>
+      </div>
+      <div class="map-card a-ruins">
+        <div class="map-head"><div class="num">07</div><h4 data-en="Sundalan">桑达兰</h4></div>
+        <p data-en="Late-game story area. The 'Freeing Sundalan' quest line progresses the main story significantly. High-level content.">后期主线区域。"Freeing Sundalan"任务线大幅推进主线。高级内容。</p>
+        <ul>
+          <li data-en="<b>Resources:</b> Endgame materials"><b>资源：</b>终局材料</li>
+          <li data-en="<b>Enemies:</b> Highest-tier shadow creatures"><b>敌人：</b>最高等级暗影生物</li>
+          <li data-en="<b>Story:</b> Major plot progression"><b>剧情：</b>重要主线推进</li>
+          <li data-en="<b>Tip:</b> Full gear and gems before entering"><b>建议：</b>进去前备齐全套装备和宝石</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature-grid" style="margin-top:40px">
+      <div class="fcard"><h4 data-en="Puzzle Types">谜题类型</h4><ul>
+        <li data-en="Element-switch puzzles (use correct element on switches)">元素切换谜题（用正确元素激活开关）</li>
+        <li data-en="Block-pushing puzzles (move blocks to pressure plates)">推方块谜题（推方块到压力板）</li>
+        <li data-en="Weapon-specific puzzles (certain weapons interact with objects)">武器专属谜题（特定武器与环境交互）</li>
+        <li data-en="Teammate puzzles (use party members for co-op mechanics)">队友谜题（用队友的协作机制）</li>
+        <li data-en="Parkour challenges (reach hidden platforms)">跑酷挑战（到达隐藏平台）</li>
+      </ul></div>
+      <div class="fcard"><h4 data-en="Treasure Hunting">寻宝指南</h4><ul>
+        <li data-en="Chests contain recipes, gems, upgrade materials">宝箱含配方、宝石、升级材料</li>
+        <li data-en="Some loot requires abilities you don't have yet">有些宝箱需要后期能力</li>
+        <li data-en="Use map reminders to mark unreachable loot">用地图标记记下拿不到的宝箱</li>
+        <li data-en="Check behind waterfalls and cliff edges">检查瀑布后和悬崖边</li>
+        <li data-en="Listen for audio cues near hidden paths">留意隐藏路径附近的声音提示</li>
+      </ul></div>
+      <div class="fcard"><h4 data-en="Map System">地图系统</h4><ul>
+        <li data-en="Place custom markers for anything">可放自定义标记</li>
+        <li data-en="Fast travel between landmarks/checkpoints">地标/检查点间快速旅行</li>
+        <li data-en="Mark objectives on the map">在地图上标记目标</li>
+        <li data-en="Choose how much guidance you want">自选引导程度</li>
+        <li data-en="Reminders for puzzles and treasure">谜题和宝箱提醒标记</li>
+      </ul></div>
+      <div class="fcard"><h4 data-en="Roguelike Mode">肉鸽模式</h4><ul>
+        <li data-en="Accessed via 'Dream Within a Dream'">通过"梦中之梦"进入</li>
+        <li data-en="Found on Nuemera Island">位于纽梅拉岛</li>
+        <li data-en="Optional side content for replayability">可选支线内容增加可玩性</li>
+        <li data-en="Randomized layouts and encounters">随机布局和遭遇</li>
+        <li data-en="Great for testing builds">适合测试配装</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="brand" style="color:#fff"><span class="logo">AD</span><span data-en="Alabaster Dawn Guide">Alabaster Dawn 攻略站</span></a>
+        <p data-i18n="foot.branddesc">《Alabaster Dawn》中文玩家攻略站，原创整理，持续更新。</p>
+        <p class="disclaimer" data-en="This is a non-profit fan guide site. Game rights belong to Radical Fish Games.">本站为玩家非营利性攻略站，游戏版权归 Radical Fish Games 所有。</p>
+      </div>
+      <div><h4 data-i18n="foot.nav">攻略导航</h4><a href="getting-started.html" data-en="Beginner">新手入门</a><a href="combat.html" data-en="Combat">战斗系统</a><a href="world.html" data-en="World">世界探索</a></div>
+      <div><h4 data-i18n="foot.systems">系统与图鉴</h4><a href="settlements.html" data-en="Settlements">重建定居点</a><a href="progression.html" data-en="Progression">成长系统</a><a href="bosses.html" data-en="Bosses">Boss攻略</a><a href="items.html" data-en="Items">物品图鉴</a></div>
+      <div><h4 data-i18n="foot.about">关于</h4><a href="#" data-i18n="foot.aboutus">关于本站</a><a href="#" data-i18n="foot.feedback">投稿反馈</a><a href="#" data-i18n="foot.changelog">更新日志</a></div>
+    </div>
+    <div class="foot-bottom" data-i18n="foot.copy">© 2026 Alabaster Dawn 攻略站 · 中文攻略 · 仅供学习交流</div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="返回顶部" data-en="Top">顶部</button>
+<div class="search-overlay" id="searchOverlay">
+  <div class="search-panel">
+    <div class="search-input-wrap">
+      <span class="s-ico"></span>
+      <input type="text" placeholder="搜索攻略、武器、Boss…">
+      <button class="search-close" aria-label="关闭">×</button>
+    </div>
+    <div class="search-results"></div>
+  </div>
+</div>
+<script src="js/common.js"></script>
+</body>
+</html>
