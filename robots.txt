@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://alabaster-dawn-guide.pages.dev/sitemap.xml
+Sitemap: https://yxhtl.github.io/alabaster-dawn-guide/sitemap.xml
