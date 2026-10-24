@@ -46,8 +46,8 @@
       title: "4元素8武器战斗系统详解", titleEn: "4 Elements 8 Weapons Combat System",
       tags: "战斗 元素 火水风土 武器 战斗技 神技 连招 切换", tagsEn: "combat element fire water wind earth weapon combat-arts divine-arts combo switch" },
     { page: "世界探索", pageEn: "World", url: "world.html",
-      title: "提兰索七大区域探索指南", titleEn: "Tiran Sol 7 Areas Exploration Guide",
-      tags: "世界 探索 区域 提兰索 谜题 宝箱 跑酷 地图 快速旅行", tagsEn: "world explore area Tiran-Sol puzzle treasure parkour map fast-travel" },
+      title: "抢先体验探索范围：区域、城镇与地牢", titleEn: "Early Access Exploration: Regions, Towns and Trials",
+      tags: "世界 探索 区域 提兰索 抢先体验 地图 预览", tagsEn: "world exploration region Tiran-Sol early-access map preview" },
     { page: "重建定居点", pageEn: "Settlements", url: "settlements.html",
       title: "定居点重建与贸易路线指南", titleEn: "Settlement Rebuilding & Trade Routes",
       tags: "定居点 重建 贸易路线 科学 科技 建筑 NPC 任务", tagsEn: "settlement rebuild trade-route science technology building NPC quest" },
@@ -60,6 +60,21 @@
     { page: "物品图鉴", pageEn: "Items", url: "items.html",
       title: "全物品图鉴", titleEn: "Item Codex",
       tags: "物品 图鉴 材料 食材 宝石 武器 配方 食物", tagsEn: "item codex material ingredient gem weapon recipe food" },
+    { page: "世界探索", pageEn: "World", url: "world.html#koro-valley",
+      title: "Koro Valley：起始区域", titleEn: "Koro Valley: First Region",
+      tags: "世界 区域 莱哈姆 失落之地 速木林 试炼", tagsEn: "world region Koro Valley Lyhamn Lost Lands Quickwood Trial of Aether" },
+    { page: "世界探索", pageEn: "World", url: "world.html#aurum-plains",
+      title: "Aurum Plains：桑达兰城镇", titleEn: "Aurum Plains: Sundalan Town",
+      tags: "世界 区域 桑达兰 城镇 重建", tagsEn: "world region Aurum Plains Sundalan town rebuild" },
+    { page: "世界探索", pageEn: "World", url: "world.html#scala-moor",
+      title: "Scala Moor：0.2.0玩法预览", titleEn: "Scala Moor: 0.2.0 Gameplay Preview",
+      tags: "世界 预览 地牢 冰冻 0.2.0", tagsEn: "world Scala Moor Trial of Cryo gameplay preview 0.2.0" },
+    { page: "世界探索", pageEn: "World", url: "world.html#nuemera",
+      title: "Nuemera Island：跨区域任务", titleEn: "Nuemera Island: Cross-region Quest",
+      tags: "世界 任务 纽梅拉 Grand Passage 断桥", tagsEn: "world Nuemera Island quest Grand Passage broken bridge" },
+    { page: "世界探索", pageEn: "World", url: "world.html#somus-dream",
+      title: "Somu’s Dream：独立支线", titleEn: "Somu’s Dream: Separate Side Activity",
+      tags: "世界 肉鸽 梦中之梦 Somu 支线", tagsEn: "world roguelike Dream Within a Dream Somu side activity" },
     /* extra searchable anchors */
     { page: "战斗系统", pageEn: "Combat", url: "combat.html",
       title: "火元素（Fire）", titleEn: "Fire Element",
@@ -75,10 +90,10 @@
       tags: "风元素 位移 速度 连击 灵活", tagsEn: "wind element mobility speed combo agile" },
     { page: "Boss攻略", pageEn: "Bosses", url: "bosses.html",
       title: "Custo Turri Magnus", titleEn: "Custo Turri Magnus",
-      tags: "Boss1 Custo Turri Magnus 巨塔 试炼厅", tagsEn: "boss1 Custo-Turri-Magnus tower trial-hall" },
+      tags: "Boss Custo Turri Magnus", tagsEn: "boss Custo-Turri-Magnus" },
     { page: "Boss攻略", pageEn: "Bosses", url: "bosses.html",
       title: "Grandis Molis", titleEn: "Grandis Molis",
-      tags: "Boss2 Grandis Molis 巨石 北行", tagsEn: "boss2 Grandis-Molis boulder north-journey" }
+      tags: "Boss Grandis Molis", tagsEn: "boss Grandis-Molis" }
   ];
 
   var lang = localStorage.getItem("ad-lang") || "zh";
